@@ -20,17 +20,16 @@
 
 ## 1. Funktionsumfang
 
-Ermöglich die Einbindung von Energie-Zählern der Firma B+G E-Tech
-ohne mehrere ModBus-Instanzen in IPS.  
-Zusätzlich können mehrere Zähler auf einem physikalischen RS485-Bus
+Ermöglich die Einbindung von PV anlagen von der Growatt ohne mehrere ModBus-Instanzen in IPS.
+Zusätzlich können mehrere Growatt anlagen auf einem physikalischen RS485-Bus
 betrieben werden.  
 
-Folgende Module beinhaltet das IPSBGETEch Repository:
+Folgende Module beinhaltet das Growatt Inverter Repository:
 
 - __f3__  
 	Ist für 3 fasen PV anlagen
 
-- __f1__
+- __f1__  
 	Ist für 1 fasen PV anlagen (work in progress)
 
 ## 2. Voraussetzungen
