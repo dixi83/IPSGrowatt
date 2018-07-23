@@ -1,7 +1,7 @@
 {
     "id": "{73846EB8-4451-4ABC-9335-FCC644CE5228}",
     "author": "Martijn Diks",
-    "name": "Growatt RS484 Dataread",
+    "name": "Growatt",
     "url": "http://github.com/dixi83/IPSGrowatt485",
     "compatibility": {
         "version": "4.3",
