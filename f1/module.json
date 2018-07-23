@@ -1,7 +1,7 @@
 {
     "id": "{0AD3B5B3-B801-44A3-860C-49343B083194}",
-    "name": "1phase",
-    "aliases": ["1phase"],
+    "name": "One Phase",
+    "aliases": ["One Phase"],
     "type": 1,
     "vendor": "Growatt",
     "parentRequirements": ["{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"],
