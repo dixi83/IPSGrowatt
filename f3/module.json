@@ -1,7 +1,7 @@
 {
     "id": "{42248B34-5DEF-4D6E-B2CD-AFB86566A2A6}",
-    "name": "Growatt 3 phase inverters",
-    "aliases": ["Growatt 3 phase inverters"],
+    "name": "3phase",
+    "aliases": ["3phase"],
     "type": 1,
     "vendor": "Growatt",
     "parentRequirements": ["{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"],
