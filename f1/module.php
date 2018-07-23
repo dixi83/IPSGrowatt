@@ -14,7 +14,6 @@
  */
 require_once(__DIR__ . "/../libs/GrowattModule.php");  // diverse Klassen
 
-/
 class f1 extends Growatt
 {
     const PREFIX = 'f1';
