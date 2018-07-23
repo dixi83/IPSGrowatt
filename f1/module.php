@@ -1,7 +1,7 @@
 <?php
 
 /*
- * @addtogroup bgetech
+ * @addtogroup growatt
  * @{
  *
  * @package       Growatt Inverters
