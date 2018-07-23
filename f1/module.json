@@ -1,0 +1,11 @@
+{
+    "id": "{0AD3B5B3-B801-44A3-860C-49343B083194}",
+    "name": "Growatt 1 phase inverters",
+    "aliases": ["Growatt 1 phase inverters"],
+    "type": 1,
+    "vendor": "Growatt",
+    "parentRequirements": ["{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"],
+    "childRequirements": [],
+    "implemented": ["{77B31ABB-18FA-4B91-BB63-E5B2AB5588F4}"],
+    "prefix": "f3"
+}
