@@ -1,24 +1,21 @@
 <?php
 
 /*
- * @addtogroup bgetech
+ * @addtogroup growatt
  * @{
  *
- * @package       BGETech
+ * @package       Growatt Inverters
  * @file          module.php
- * @author        Michael Tröger <micha@nall-chan.net>
+ * @author        Martijn Diks
  * @copyright     2018 Michael Tröger
- * @license       https://creativecommons.org/licenses/by-nc-sa/4.0/ CC BY-NC-SA 4.0
+ * @license       
  * @version       2.0
  *
  */
-require_once(__DIR__ . "/BGETechTraits.php");  // diverse Klassen
+require_once(__DIR__ . "/GrowattTraits.php");  // diverse Klassen
 
-/**
- * BGETech ist die Basisklasse für alle Energie-Zähler der Firma B+G E-Tech
- * Erweitert ipsmodule
- */
-class BGETech extends IPSModule
+
+class Growatt extends IPSModule
 {
     use Semaphore,
         VariableProfile;
