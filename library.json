@@ -3,4 +3,9 @@
     "author": "Martijn Diks",
     "name": "Growatt RS484 Dataread",
     "url": "http://github.com/dixi83/IPSGrowatt485"
+    "compatibility": {
+        "version": "4.3",
+        "date": 1498241677
+    },
+    "version": "0.1",
 }
