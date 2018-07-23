@@ -4,7 +4,7 @@
  * @addtogroup growatt
  * @{
  *
- * @package       Growatt Inverters
+ * @package       Growatt
  * @file          module.php
  * @author        Martijn Diks
  * @copyright     2018 Michael Tröger
@@ -14,9 +14,9 @@
  */
 require_once(__DIR__ . "/../libs/GrowattModule.php");  // diverse Klassen
 
-class f3 extends Growatt
+class GW3F extends Growatt
 {
-    const PREFIX = 'f3';
+    const PREFIX = 'GW3F';
 
     public static $Variables = [
         ['Voltage L1', vtFloat, 'Volt.230', 0x0000, 4, 2,true],

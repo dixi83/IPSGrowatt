@@ -4,7 +4,7 @@
  * @addtogroup growatt
  * @{
  *
- * @package       Growatt Inverters
+ * @package       Growatt
  * @file          module.php
  * @author        Martijn Diks
  * @copyright     2018 Michael Tröger
