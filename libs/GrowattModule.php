@@ -62,8 +62,9 @@ class Growatt extends IPSModule
 		$this->RegisterProfileInteger('Power-Int', '', '', ' KWH', 0, 0, 0, 2);
         $this->RegisterProfileInteger('VAr-Int', '', '', ' VAr', 0, 0, 0, 2);
         $this->RegisterProfileInteger('VA-Int', '', '', ' VA', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('mA-Int', '', '', ' °', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('mA-Int', '', '', ' mA', 0, 0, 0, 2);
         $this->RegisterProfileInteger('kVArh-Int', '', '', ' kVArh', 0, 100, 0, 2);
+		$this->RegisterProfileInteger('Temperature-Int', '', '', ' °C', 0, 100, 0, 2);
         $Variables = json_decode($this->ReadPropertyString('Variables'), true);
         foreach ($Variables as $Variable) {
             $this->MaintainVariable($Variable['Ident'], $Variable['Name'], $Variable['VarType'], $Variable['Profile'], $Variable['Pos'], $Variable['Keep']);
