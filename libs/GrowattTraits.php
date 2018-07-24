@@ -234,7 +234,7 @@ trait VariableProfile
         IPS_SetVariableProfileIcon($Name, $Icon);
         IPS_SetVariableProfileText($Name, $Prefix, $Suffix);
         IPS_SetVariableProfileValues($Name, $MinValue, $MaxValue, $StepSize);
-        if ($VarTyp == vtFloat) {
+        if ($VarTyp == vtInteger) {
             IPS_SetVariableProfileDigits($Name, $Digits);
         }
     }
