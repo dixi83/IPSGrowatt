@@ -150,7 +150,7 @@ class Growatt extends IPSModule
                 }
                 break;
             case vtInteger:
-                switch ($Variable['Quantity']) {
+                switch ($Variable['Quantity']) { //02 04 04 11 22 08 F5 AA 35 
                     case 1:
                         return ord($Value);
                     case 2:
