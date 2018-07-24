@@ -195,7 +195,7 @@ class Growatt extends IPSModule
             parent::SetValue($Variable['Ident'], $Value);
         } else {
             $id = @$this->GetIDForIdent($Variable['Ident']);
-            SetValueFloat($id, $Value);
+            SetValue($id, $Value);
         }
         return true;
     }
