@@ -55,10 +55,9 @@ class Growatt extends IPSModule
     public function ApplyChanges()
     {
         parent::ApplyChanges();
-        $this->RegisterProfileFloat('VaR', '', '', ' VAr', 0, 0, 0, 2);
+        $this->RegisterProfileFloat('VAr', '', '', ' VAr', 0, 0, 0, 2);
         $this->RegisterProfileFloat('VA', '', '', ' VA', 0, 0, 0, 2);
-        $this->RegisterProfileFloat('PhaseAngle', '', '', ' °', 0, 0, 0, 2);
-        $this->RegisterProfileFloat('Intensity.F', '', '', ' %', 0, 100, 0, 2);
+        $this->RegisterProfileFloat('mA', '', '', ' °', 0, 0, 0, 2);
         $this->RegisterProfileFloat('kVArh', '', '', ' kVArh', 0, 100, 0, 2);
         $Variables = json_decode($this->ReadPropertyString('Variables'), true);
         foreach ($Variables as $Variable) {
