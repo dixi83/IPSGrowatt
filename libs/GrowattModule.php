@@ -55,10 +55,15 @@ class Growatt extends IPSModule
     public function ApplyChanges()
     {
         parent::ApplyChanges();
-        $this->RegisterProfileFloat('VaR', '', '', ' VAr', 0, 0, 0, 2);
-        $this->RegisterProfileFloat('VA', '', '', ' VA', 0, 0, 0, 2);
-        $this->RegisterProfileFloat('mA', '', '', ' °', 0, 0, 0, 2);
-        $this->RegisterProfileFloat('kVArh', '', '', ' kVArh', 0, 100, 0, 2);
+		$this->RegisterProfileInteger('Watt', '', '', ' W', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('Volt', '', '', ' V', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('Ampere', '', '', ' A', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('Hertz', '', '', ' Hz', 0, 0, 0, 2);
+		$this->RegisterProfileInteger('Power', '', '', ' VAr', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('VaR', '', '', ' VAr', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('VA', '', '', ' VA', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('mA', '', '', ' °', 0, 0, 0, 2);
+        $this->RegisterProfileInteger('kVArh', '', '', ' kVArh', 0, 100, 0, 2);
         $Variables = json_decode($this->ReadPropertyString('Variables'), true);
         foreach ($Variables as $Variable) {
             $this->MaintainVariable($Variable['Ident'], $Variable['Name'], $Variable['VarType'], $Variable['Profile'], $Variable['Pos'], $Variable['Keep']);
@@ -195,7 +200,7 @@ class Growatt extends IPSModule
             parent::SetValue($Variable['Ident'], $Value);
         } else {
             $id = @$this->GetIDForIdent($Variable['Ident']);
-            SetValueFloat($id, $Value);
+            SetValue($id, $Value);
         }
         return true;
     }
