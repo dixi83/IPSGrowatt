@@ -135,6 +135,7 @@ class Growatt extends IPSModule
                 continue;
             }
             $this->SendDebug($Variable['Name'], $Value, 0);
+			$Value = $Value / 10;
             $this->SetValueExt($Variable, $Value);
         }
         return true;
