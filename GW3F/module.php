@@ -77,7 +77,7 @@ class GW3F extends Growatt
 		['PV Energy total', vtInteger, '', 0x0037, 4,1 ,true],
 		['PV Energy total ', vtInteger, 'Power-Int', 0x0038, 4,1 ,true],
 		['AC Reactive power', vtInteger, '', 0x0039, 4,1 ,true],
-		['AC Reactive power ', vtInteger, 'Var-Int', 0x003A, 4,1 ,true],
+		['AC Reactive power ', vtInteger, 'VAr-Int', 0x003A, 4,1 ,true],
 		['AC Reactive energy', vtInteger, '', 0x003B, 4,1 ,true],
 		['AC Reactive energy ', vtInteger, 'kVArh-Int', 0x003C, 4,1 ,true],
 		['AC Reactive energy', vtInteger, '', 0x003D, 4,1 ,true],
