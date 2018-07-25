@@ -126,16 +126,16 @@ class Growatt extends IPSModule
             if ($ReadData === false) {
                 return false;
             }
+			$this->SendDebug($Variable['Name'] . ' Serial', $ReadData, 1);
             $ReadValue = substr($ReadData, 2);
             $this->SendDebug($Variable['Name'] . ' RAW', $ReadValue, 1);
             $Value = $this->ConvertValue($Variable, strrev($ReadValue));
-
+			
             if ($Value === null) {
                 $this->LogMessage(sprintf($this->Translate('Combination of type and size of value (%s) not supported.'), $Variable['Name']), KL_ERROR);
                 continue;
             }
             $this->SendDebug($Variable['Name'], $Value, 0);
-			//$Value = $Value / 10;
             $this->SetValueExt($Variable, $Value);
         }
         return true;
@@ -152,7 +152,7 @@ class Growatt extends IPSModule
             case vtInteger:
                 switch ($Variable['Quantity']) { //02 04 04 11 22 08 F5 AA 35 
                     case 1:
-                        return ord($Value);
+						return unpack("S", $Value)[1];
                     case 2:
                         return unpack("n", $Value)[1];
                     case 4:
