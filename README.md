@@ -35,8 +35,8 @@ Folgende Module beinhaltet das Growatt Inverter Repository:
 ## 2. Voraussetzungen
 
  - IPS 4.3 oder höher  
- - Unterstützte Zähler  
- - physikalisches RS485 Interface für die Zähler  
+ - Growatt Umrichter 
+ - physikalisches RS485 Interface für die Growatt Umrichter 
 
 ## 3. Software-Installation
 
@@ -65,4 +65,4 @@ Ist direkt in der Dokumentation der jeweiligen Module beschrieben.
 ### 2. Changlog
 
 Version 0.1:  
- - Erste start fon das modul 
+ - Erste start von das modul 
