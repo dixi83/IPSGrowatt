@@ -58,7 +58,7 @@ Ist direkt in der Dokumentation der jeweiligen Module beschrieben.
 | Modul   | Typ    | Prefix  | GUID                                   |
 | :-----: | :----: | :-----: | :------------------------------------: |
 | f1      | Device | f1      | {0AD3B5B3-B801-44A3-860C-49343B083194} |
-| f2      | Device | f3      | {42248B34-5DEF-4D6E-B2CD-AFB86566A2A6} |
+| f3      | Device | f3      | {42248B34-5DEF-4D6E-B2CD-AFB86566A2A6} |
 
 
 
