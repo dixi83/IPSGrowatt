@@ -135,6 +135,7 @@ class Growatt extends IPSModule
                 $this->LogMessage(sprintf($this->Translate('Combination of type and size of value (%s) not supported.'), $Variable['Name']), KL_ERROR);
                 continue;
             }
+	    $Value = $Value/10;
             $this->SendDebug($Variable['Name'], $Value, 0);
             $this->SetValueExt($Variable, $Value);
         }
