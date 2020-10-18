@@ -135,10 +135,15 @@ class Growatt extends IPSModule
                 $this->LogMessage(sprintf($this->Translate('Combination of type and size of value (%s) not supported.'), $Variable['Name']), KL_ERROR);
                 continue;
             }
-	    $Value = $Value/10;
-            $this->SendDebug($Variable['Name'], $Value, 0);
-            $this->SetValueExt($Variable, $Value);
-        }
+			if ($Variable['Ident'] == 'Gridfrequency') {
+				$Value = $Value/100;
+			} else {
+				$Value = $Value/10;
+			}
+			
+			$this->SendDebug($Variable['Name'], $Value, 0);
+			$this->SetValueExt($Variable, $Value);
+		}
         return true;
     }
 
@@ -165,7 +170,7 @@ class Growatt extends IPSModule
             case vtFloat:
                 switch ($Variable['Quantity']) {
                     case 2:
-                        return unpack("f", $Value)[1];
+                        return unpack("n", $Value)[1];
                     case 4:
                         return unpack("f", $Value)[1];
                     case 8:
