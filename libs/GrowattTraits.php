@@ -206,6 +206,24 @@ trait VariableProfile
     {
         $this->RegisterProfile(1, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits);
     }
+    
+    
+    /**
+     * Erstell und konfiguriert ein VariablenProfil für den Typ float
+     *
+     * @access protected
+     * @param string $Name Name des Profils.
+     * @param string $Icon Name des Icon.
+     * @param string $Prefix Prefix für die Darstellung.
+     * @param string $Suffix Suffix für die Darstellung.
+     * @param int $MinValue Minimaler Wert.
+     * @param int $MaxValue Maximaler wert.
+     * @param int $StepSize Schrittweite
+     */
+    protected function RegisterProfileFloat($Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits)
+    {
+        $this->RegisterProfile(2, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits);
+    }
 
     /**
      * Erstell und konfiguriert ein VariablenProfil für den Typ float
