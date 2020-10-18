@@ -69,13 +69,5 @@
                         }],
                     "values": []
                 }
-            ],
-    "actions":
-            [
-                {
-                    "type": "Button",
-                    "label": "Read values",
-                    "onClick": ""
-                }
             ]
 }
