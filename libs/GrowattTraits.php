@@ -191,7 +191,7 @@ trait VariableProfile
 {
 
     /**
-     * Erstell und konfiguriert ein VariablenProfil für den Typ float
+     * Erstell und konfiguriert ein VariablenProfil für den Typ integer
      *
      * @access protected
      * @param string $Name Name des Profils.
@@ -202,9 +202,9 @@ trait VariableProfile
      * @param int $MaxValue Maximaler wert.
      * @param int $StepSize Schrittweite
      */
-    protected function RegisterProfileInteger($Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits)
+    protected function RegisterProfileInteger($Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize)
     {
-        $this->RegisterProfile(1, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits);
+        $this->RegisterProfile(1, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, 0);
     }
     
     
