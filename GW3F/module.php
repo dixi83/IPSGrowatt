@@ -31,7 +31,7 @@ class GW3F extends Growatt
 		['PV2 input watt low ', vtInteger, 'Watt-Int', 0x0A, 4, 1 ,true],
 		['Output power high ', vtInteger, 'Watt-Int', 0x0B, 4, 1 ,true],
 		['Output power low ', vtInteger, 'Watt-Int', 0x0C, 4, 1 ,true],
-		['Grid frequency ', vtInteger, 'Hertz-Int', 0x0D, 4, 1 ,true],
+		['Grid frequency ', vtFloat, 'Hertz-Float', 0x0D, 4, 1 ,true],
 		['L1 phase grid voltage ', vtInteger, 'Volt-Int', 0x0E, 4, 1 ,true],
 		['L1 phase grid output current ', vtInteger, 'Ampere-Int', 0x0F, 4, 1 ,true],
 		['L1 phase grid output watt high ', vtInteger, 'VA-Int', 0x10, 4, 1 ,true],
