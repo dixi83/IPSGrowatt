@@ -55,16 +55,16 @@ class Growatt extends IPSModule
     public function ApplyChanges()
     {
         parent::ApplyChanges();
-	$this->RegisterProfileInteger('Watt-Int', '', '', ' W', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('Volt-Int', '', '', ' V', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('Ampere-Int', '', '', ' A', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('Hertz-Int', '', '', ' Hz', 0, 0, 0, 2);
-	$this->RegisterProfileInteger('Power-Int', '', '', ' KWH', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('VAr-Int', '', '', ' VAr', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('VA-Int', '', '', ' VA', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('mA-Int', '', '', ' mA', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('kVArh-Int', '', '', ' kVArh', 0, 100, 0, 2);
-	$this->RegisterProfileInteger('Temperature-Int', '', '', ' °C', 0, 100, 0, 2);
+	$this->RegisterProfileInteger('Watt-Int', '', '', ' W', 0, 0, 0);
+        $this->RegisterProfileInteger('Volt-Int', '', '', ' V', 0, 0, 0);
+        $this->RegisterProfileInteger('Ampere-Int', '', '', ' A', 0, 0, 0);
+        $this->RegisterProfileFloat('Hertz-Int', '', '', ' Hz', 0, 0, 0, 2);
+	$this->RegisterProfileInteger('Power-Int', '', '', ' KWH', 0, 0, 0);
+        $this->RegisterProfileInteger('VAr-Int', '', '', ' VAr', 0, 0, 0);
+        $this->RegisterProfileInteger('VA-Int', '', '', ' VA', 0, 0, 0);
+        $this->RegisterProfileInteger('mA-Int', '', '', ' mA', 0, 0, 0);
+        $this->RegisterProfileInteger('kVArh-Int', '', '', ' kVArh', 0, 100, 0);
+	$this->RegisterProfileInteger('Temperature-Int', '', '', ' °C', 0, 100, 0);
         $Variables = json_decode($this->ReadPropertyString('Variables'), true);
         foreach ($Variables as $Variable) {
             $this->MaintainVariable($Variable['Ident'], $Variable['Name'], $Variable['VarType'], $Variable['Profile'], $Variable['Pos'], $Variable['Keep']);
