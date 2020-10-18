@@ -179,8 +179,14 @@ if (!defined("IS_ACTIVE")) { //Nur wenn Konstanten noch nicht bekannt sind.
 
 if (!defined("vtBoolean")) { //Nur wenn Konstanten noch nicht bekannt sind.
     define('vtBoolean', 0);
+}
+if (!defined("vtInteger")) { 
     define('vtInteger', 1);
+}
+if (!defined("vtFloat")) { 
     define('vtFloat', 2);
+}
+if (!defined("vtString")) { 
     define('vtString', 3);
 }
 
@@ -204,7 +210,7 @@ trait VariableProfile
      */
     protected function RegisterProfileInteger($Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize)
     {
-        $this->RegisterProfile(1, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, 0);
+        $this->RegisterProfile(vtInteger, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, 0);
     }
     
     
@@ -222,7 +228,7 @@ trait VariableProfile
      */
     protected function RegisterProfileFloat($Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits = 0)
     {
-        $this->RegisterProfile(2, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits);
+        $this->RegisterProfile(vtFloat, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits);
     }
 
     /**
@@ -238,7 +244,7 @@ trait VariableProfile
      * @param int $MaxValue Maximaler wert.
      * @param int $StepSize Schrittweite
      */
-    protected function RegisterProfile($VarTyp, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits = 0)
+    protected function RegisterProfile($VarTyp, $Name, $Icon, $Prefix, $Suffix, $MinValue, $MaxValue, $StepSize, $Digits)
     {
         if (!IPS_VariableProfileExists($Name)) {
             IPS_CreateVariableProfile($Name, $VarTyp);
