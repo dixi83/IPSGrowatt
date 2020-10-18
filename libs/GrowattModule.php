@@ -58,7 +58,7 @@ class Growatt extends IPSModule
 	$this->RegisterProfileInteger('Watt-Int', '', '', ' W', 0, 0, 0, 2);
         $this->RegisterProfileInteger('Volt-Int', '', '', ' V', 0, 0, 0, 2);
         $this->RegisterProfileInteger('Ampere-Int', '', '', ' A', 0, 0, 0, 2);
-        $this->RegisterProfileInteger('Hertz-Int', '', '', ' Hz', 0, 0, 10, 2);
+        $this->RegisterProfileInteger('Hertz-Int', '', '', ' Hz', 0, 0, 0, 2);
 	$this->RegisterProfileInteger('Power-Int', '', '', ' KWH', 0, 0, 0, 2);
         $this->RegisterProfileInteger('VAr-Int', '', '', ' VAr', 0, 0, 0, 2);
         $this->RegisterProfileInteger('VA-Int', '', '', ' VA', 0, 0, 0, 2);
